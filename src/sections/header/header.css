@@ -1,0 +1,52 @@
+header{
+    margin-top: 100px ;
+    place-items: center;
+    transition: var(--transition);
+    height: calc(100vh - 5rem);
+}
+
+.header_container> p{
+    align-items: center;
+    color: var( --color-dark);
+    margin: .2rem;
+}
+.header_container> h2{
+    align-items: center;
+    color: var( --color-primary);
+    margin: .2rem;
+}
+.header_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#img{
+    width: 18rem ;
+    height: 22rem;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width:1024px) {
+   
+   
+
+    .header_container{
+       width: 14rem;
+       margin-left: 10rem !important;
+        max-width: 60%;
+      max-height: 1000vh;
+    }
+
+
+    #img{
+        width: 12rem ;
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+
+}

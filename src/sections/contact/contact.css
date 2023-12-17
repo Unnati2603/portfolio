@@ -1,0 +1,94 @@
+
+/* section{
+   padding:1rem;
+  } */
+  #contact{
+    padding: 1rem;
+  }
+  
+.Cnotainer{
+    
+    text-align: center;
+}
+
+.container_form{
+    max-width: 50rem;
+    margin: auto;
+}
+
+.contactInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.container_form > h2{
+    align-items: center;
+    color: var( --color-primary);
+    margin: .2rem;
+}
+
+
+input, textarea{
+  
+    color: var(--color-primary);
+  
+    border: 1px solid var(--color-dark);
+    text-transform: uppercase;
+
+}
+
+input[type="submit"]{
+    max-width: 16rem;
+    margin-top: 2rem;
+    background-color:  var(--color-primary);
+    color:var(--color-light);
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: .1rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#img{
+    width: 18rem ;
+    height: 22rem;
+    overflow: hidden;
+} */
+
+
+@media screen and (max-width:1024px) {
+   
+   
+
+    
+
+    /* #img{
+        width: 12rem ;
+        height: 100%;
+        overflow: hidden;
+    } */
+
+
+
+}

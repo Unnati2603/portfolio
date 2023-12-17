@@ -1,0 +1,229 @@
+*{
+  margin:0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+
+:root {
+
+
+  --primary-hue: 248;
+  
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  
+  --light-lightness: 94%;
+  --white-lightness: 100%;
+  
+  --color-primary: hsl(248, 53%, 58%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  
+  --color-light: hsl(var(--primary-hue), 5%, var( --light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var( --black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+  
+  
+  
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  
+  /* container over *//*now border */
+  
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+  /* and transitions */
+  
+  
+  --transition: all 500ms ease;
+
+
+
+
+
+
+
+
+  --dark-bg-color: hsl(0, 0%, 20%);
+  --dark-text-color: white;
+  }
+  .dark-mode {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-text-color);
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+
+
+body {
+  /* background-color: aquamarine; */
+  margin: 0;
+  padding:0;
+  border:0;
+  box-sizing: border-box; 
+  /* 10 pixels in 100 pixes if def as 100 */
+  
+
+font-family: 'Montserrat', sans-serif;
+/* gfonts se  */
+font-size: small;
+
+line-height: 1.6;
+font-size: 0.6rem;
+}
+
+
+
+
+
+
+.container{
+  width: var(--container-width-lg);
+  margin: auto;
+  max-width: 1920px ;
+}
+
+
+section {
+  padding: 1rem;
+  
+  background: var(--color-light);
+  transition: var(--transition);
+}
+
+
+section:nth-child(even){
+  background-color: var(--color-white);
+}
+
+
+
+section>h2{text-align: center;
+}
+section>p{
+  text-align: center;
+  margin:0.5rem auto 4rem;
+  width: 40%;
+  /* font-size: 0.2rem; */
+  }
+
+
+
+
+
+
+a{
+  color: var(--color-white);
+transition: var(--transition);
+}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--color-black);
+  margin: .5rem;
+}
+
+
+.button{
+  display: inline-block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: 0.6rem 2.5rem 0.1rem 0.1rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+  margin: 20px;
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.button:hover{
+background-color: transparent;
+border-color: var(--color-primary);
+color: var(--color-primary);
+/* transform: translateY(); */
+}
+
+
+
+img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.dark-mode {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+.dark-mode .div_menu a {
+  color: white;
+}
+
+
+.dark-mode {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+.dark-mode .section_menu a {
+  color: white;
+} */
+
+
+
+
+
+
+/* 
+.light-mode {
+  background-color: hsl(248, 53%, 58%);
+  color: black;
+}
+
+.light-mode .div_menu a {
+  color: black;
+} */
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+  section{margin-left: 10rem !important;}
+
+}
